@@ -67,6 +67,7 @@ CREATE TABLE IF NOT EXISTS `guarderia`.`usuario` (
   `correo` VARCHAR(100) NULL DEFAULT NULL,
   `tipo_documento_id_tipo_documento` INT(11) NOT NULL,
   `id_rol` INT(11) NOT NULL,
+  `contrasena` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`id_usuario`),
   UNIQUE INDEX `numero_documento` (`numero_documento` ASC),
   INDEX `fk_usuario_tipo_documento1_idx` (`tipo_documento_id_tipo_documento` ASC),

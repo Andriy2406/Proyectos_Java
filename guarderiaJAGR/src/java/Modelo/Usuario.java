@@ -17,7 +17,8 @@ public class Usuario {
     private String correo;
     private int tipoDocumentoIdTipoDocumento;
     private int idRol;
-
+    private String contrasena; 
+    
     public int getIdUsuario() {
         return idUsuario;
     }
@@ -81,4 +82,13 @@ public class Usuario {
     public void setIdRol(int idRol) {
         this.idRol = idRol;
     }
+    
+    public String getContrasena() {
+        return contrasena;
+    }
+
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
+    }
+   
 }
