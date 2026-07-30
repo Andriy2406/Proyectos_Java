@@ -16,7 +16,7 @@ public class PruebaConsultaUsuario {
     
         UsuarioDAO miUsuarioDAO = new UsuarioDAO();
         
-        String correo = "carlos.mendoza@email.com";
+        String correo = "Nami";
         
         Usuario miUsuario = miUsuarioDAO.consultarUsuario(correo);
         

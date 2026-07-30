@@ -10,7 +10,7 @@ public class Conexion {
     private String user = "root" ;
     private String password = "";
     private String baseDatos = "guarderia";
-    private String url = "jdbc:mysql://localhost:3307/" + baseDatos + "?useTimezone=true&serverTimezone=UTC";
+    private String url = "jdbc:mysql://localhost:3306/" + baseDatos + "?useTimezone=true&serverTimezone=UTC";
     
     public Conexion () {
     
