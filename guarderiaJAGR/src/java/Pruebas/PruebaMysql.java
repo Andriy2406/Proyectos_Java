@@ -14,13 +14,13 @@ public class PruebaMysql {
     
     CrudUsuario operaciones = new CrudUsuario();
     
-    // operaciones.insertarDato(12, "Juan", "Pérez", "123456789", "5551234", "juan@email.com",1, 1,"miClave123");
+    // operaciones.insertarDato(11, "Juan", "Pérez", "123456789", "5551234", "juan@email.com",1, 1,"miClave123");
     
-    //operaciones.leerDatos();
+    // operaciones.leerDatos();
     
-    // operaciones.actualizarDatos(12, "Juan Carlos", "Pérez", "123456789", "3009998877", "juan.carlos@email.com", 1, 1, "nuevaClave456");
+    // operaciones.actualizarDatos(11, "Juan Carlos", "Pérez", "123456789", "3009998877", "juan.carlos@email.com", 1, 1, "nuevaClave456");
     
-    // operaciones.eliminarDatos(12);
+    // operaciones.eliminarDatos(11);
     
     }
     

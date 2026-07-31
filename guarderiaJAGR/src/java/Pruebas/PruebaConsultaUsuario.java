@@ -5,6 +5,7 @@
 package Pruebas;
 import Modelo.Usuario;
 import Controlador.UsuarioDAO;
+import java.util.Scanner;
 
 /**
  *
@@ -13,10 +14,14 @@ import Controlador.UsuarioDAO;
 public class PruebaConsultaUsuario {
     
     public static void main(String[] args){
+        
+        Scanner sc = new Scanner(System.in);
     
         UsuarioDAO miUsuarioDAO = new UsuarioDAO();
         
-        String correo = "Nami";
+        System.out.println("Ingrese el correo de usario a buscar: ");
+        
+        String correo = sc.nextLine();
         
         Usuario miUsuario = miUsuarioDAO.consultarUsuario(correo);
         
@@ -34,5 +39,7 @@ public class PruebaConsultaUsuario {
         }else{
         System.out.println("No se encontro el usuario");
             }
+        
+        sc.close();
     }
 }
