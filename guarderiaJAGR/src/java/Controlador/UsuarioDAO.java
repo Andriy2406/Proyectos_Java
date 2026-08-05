@@ -51,4 +51,33 @@ public class UsuarioDAO {
        
     }
     
+    public boolean InsertarUsuario(Usuario miUsuario){
+    
+        boolean insertar = false;
+        
+        Connection conn = conect.getConn();
+        
+        try {
+            String querySql = "INSERT INTO Usuario (nombre, apellido, numero_documento, telefono, correo, tipo_documento_id_tipo_documento, id_rol, contrasena) VALUES (?,?,?,?,?,?,?,?)";
+            
+            PreparedStatement ps = conn.prepareStatement(querySql);
+            ps.setString(1, miUsuario.getNombre());
+            ps.setString(2, miUsuario.getApellido());
+            ps.setString(3, miUsuario.getNumeroDocumento());
+            ps.setString(4, miUsuario.getTelefono());
+            ps.setString(5, miUsuario.getCorreo());
+            ps.setInt(6, miUsuario.getTipoDocumentoIdTipoDocumento());
+            ps.setInt(7, miUsuario.getIdRol());
+            ps.setString(8, miUsuario.getContrasena());
+            
+            ps.executeUpdate();
+            insertar = true;
+            System.out.println("Dato Insertado");
+            
+        } catch (Exception e) {
+            System.out.println("Error al insertar Usuario: " + e.getMessage());
+        }
+            return insertar;
+    }
+    
 }

@@ -42,4 +42,5 @@ public class PruebaConsultaUsuario {
         
         sc.close();
     }
+    
 }
